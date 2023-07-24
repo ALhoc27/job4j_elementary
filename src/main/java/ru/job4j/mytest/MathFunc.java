@@ -23,5 +23,4 @@ public class MathFunc {
         int result3 = MathFunc.func1(100);
         System.out.println(result3);
     }
-
 }
