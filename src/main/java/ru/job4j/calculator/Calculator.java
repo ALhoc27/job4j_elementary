@@ -7,6 +7,7 @@ public class Calculator {
         int six = 6;
         int four = 4;
         int five = 5;
+        int size = 10;
         int sixDivTwo = six / two;
         int fiveMinusTwo = five - two;
         int fourTimeTwo = four * two;
@@ -14,6 +15,10 @@ public class Calculator {
         //Пример
         int onePlusTwo = one + two;
         System.out.println(onePlusTwo + " / " + sixDivTwo + " / " + fiveMinusTwo + " / " + fourTimeTwo);
-
+        one = 10;
+        two = 11;
+        System.out.printf("new one: %s, new two: %s", one, two);
+        size = size - 5;
+        System.out.println(size);
     }
 }
