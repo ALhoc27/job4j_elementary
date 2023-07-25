@@ -27,5 +27,11 @@ package ru.job4j.mytest;
 
             ArgMyMethod helloMyConstr = new ArgMyMethod();
             helloMyConstr.helloMy("Sasha");
+
+            int a = 'A';
+            int b = 'B';
+            System.out.println("A: " + a);
+            System.out.println("B: " + b);
+            System.out.println("A + B: " + (a + b));
     }
 }
