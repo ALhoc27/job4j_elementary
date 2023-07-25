@@ -8,7 +8,7 @@ public class Fit {
             System.out.printf("До идеального веса, вам не хватает: %,.2f \n", rezrsl);
             return rsl;
         } else {
-            System.out.println("У вас идеальный вес!");
+            System.out.println("У вас идеальный вес! ");
             return rsl;
         }
     }
