@@ -28,7 +28,7 @@ public class Converter {
 
     public static void main(String[] args) {
         float value = 140f;
-        //tests
+
         float in = value;
         float expectedeurotoR1 = 9800;
         float out1 = Converter.eurotoRuble(in);
@@ -59,7 +59,7 @@ public class Converter {
         float rubtodDollar = rubleToDollar(value);
         String sf4 = String.format("%,.2f", rubtodDollar);
         System.out.println(value + " rubles are " + sf4 + " dollar.");
-        //view test
+
         System.out.println("\nTest: ");
         System.out.println(value + " euro are " + expectedeurotoR1 + "   Test result : " + passedsf1);
         System.out.println(value + " dollar are " + expectedeurotoR2 + "   Test result : " + passedsf2);
