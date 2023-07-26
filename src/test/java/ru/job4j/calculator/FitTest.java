@@ -10,20 +10,20 @@ class FitTest {
 
     @Test
     void wheneHeight187ManWeightThen100() {
-        float inHeight = 187;
-        float eps = 0.01f;
-        float expected = 100.05f;
-        float outMen = (float) ((inHeight - 100) * 1.15);
+        short inHeight = 187;
+        double eps = 0.01f;
+        double expected = 100.05f;
+        double outMen = Fit.manWeight(inHeight);
         assertThat(outMen).isEqualTo(expected, withPrecision(eps));
         System.out.println("wheneHeight187ManWeightThen100 " + expected + " / " + outMen);
     }
 
     @Test
     void wheneHeight187WoomenWeightThen100() {
-        float inHeight = 187;
-        float eps = 0.01f;
-        float expected = 88.55f;
-        float outWomen = (float) ((inHeight - 110) * 1.15);
+        short inHeight = 187;
+        double eps = 0.01f;
+        double expected = 88.55f;
+        double outWomen = Fit.womanWeight(inHeight);
         assertThat(outWomen).isEqualTo(expected, withPrecision(eps));
         System.out.println("wheneHeight187WoomenWeightThen100 " + expected + " / " + outWomen);
     }
