@@ -11,6 +11,7 @@ class DummyBotTest {
         String in = "Hi, Bot.";
         String result = DummyBot.answer(in);
         String expected = "Hi, SmartAss.";
+        assertThat(result).isEqualTo(expected);
         System.out.println("whenGreetBot - " + result + " / " + expected);
     }
 
