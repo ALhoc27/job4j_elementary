@@ -26,5 +26,6 @@ public class MathFuncs {
         char c = 45000;
         float i = c;
         System.out.println(i);
+
     }
 }
