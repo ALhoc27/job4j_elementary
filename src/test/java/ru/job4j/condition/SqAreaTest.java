@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SqAreaTest {
 
+    /*
     @Test
     void whenP6K2Sdot2quare2() {
         int expected = 2;
@@ -35,5 +36,23 @@ class SqAreaTest {
         double out = SqArea.square(p, k);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
         System.out.println("whenP8K4Sdot2quare256 " + expected + " / " + out);
+    }
+     */
+    @Test
+    void whenP6K2Square2() {
+        int expected = 2;
+        int p = 6;
+        int k = 2;
+        double out = SqArea.square(p, k);
+        assertThat(out).isCloseTo(expected, offset(0.01));
+    }
+
+    @Test
+    void whenP4K1Square1() {
+        int expected = 1;
+        int p = 4;
+        int k = 1;
+        double out = SqArea.square(p, k);
+        assertThat(out).isCloseTo(expected, offset(0.01));
     }
 }
