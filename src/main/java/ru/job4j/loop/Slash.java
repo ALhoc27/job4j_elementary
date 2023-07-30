@@ -11,9 +11,9 @@ public class Slash {
             tempRow--;
             for (int cell = 0; cell < size; cell++) {
                 if (cell == tempCell && tempCell != size - 1) {
-                    System.out.print("Xc");
+                    System.out.print("X");
                 } else if (tempRow == cell) {
-                    System.out.print("Xr");
+                    System.out.print("X");
                 } else {
                     System.out.print(" ");
                 }
