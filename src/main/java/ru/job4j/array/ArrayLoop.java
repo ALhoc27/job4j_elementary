@@ -11,5 +11,9 @@ public class ArrayLoop {
         for (int i = 0; i < name; i++) {
             System.out.println(arrayIn[i]);
         }
+        System.out.println("");
+        for (int names: arrayIn) {
+            System.out.println(names);
+        }
     }
 }
