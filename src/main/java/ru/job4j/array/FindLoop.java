@@ -14,7 +14,7 @@ public class FindLoop {
             }
         }
         if (result == -1) {
-            System.out.println("Элемент не найден!");
+            System.out.println("Элемент не найден! ");
         }
         return result;
     }
