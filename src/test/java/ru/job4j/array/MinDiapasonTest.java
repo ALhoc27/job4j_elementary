@@ -36,4 +36,14 @@ class MinDiapasonTest {
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenSort() {
+        int[] array = new int[] {1, 4, 3, 2, 5};
+        int start = 1;
+        int finish = array.length - 1;
+        int result = MinDiapason.findMin(array, start, finish);
+        int expected = 2;
+        assertThat(result).isEqualTo(expected);
+    }
 }
