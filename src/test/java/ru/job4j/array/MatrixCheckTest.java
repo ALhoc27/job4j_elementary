@@ -82,4 +82,29 @@ class MatrixCheckTest {
         char[] expected = {'X', 'Y', 'Z'};
         assertThat(result).containsExactly(expected);
     }
+
+    @Test
+    public void whenHasMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        int column = 2;
+        boolean result = MatrixCheck.monoVertical(input, column);
+        assertThat(result).isTrue();
+    }
+
+    @Test
+    public void whenHasMonoVerticalfalse2() {
+        char[][] input = {
+                {' ', 'X', ' '},
+                {' ', ' ', ' '},
+                {' ', ' ', 'X'},
+        };
+        int column = 1;
+        boolean result = MatrixCheck.monoVertical(input, column);
+        assertThat(result).isFalse();
+    }
+
 }
