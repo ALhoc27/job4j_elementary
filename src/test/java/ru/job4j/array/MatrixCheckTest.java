@@ -42,7 +42,7 @@ class MatrixCheckTest {
                 {'X', 'X', 'X', 'X', 'X'},
                 {' ', ' ', ' ', ' ', ' '},
         };
-        int row = 3;
+        int row = 2;
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertThat(result).isFalse();
     }
@@ -168,7 +168,7 @@ class MatrixCheckTest {
                 {' ', ' ', ' ', 'X', ' '},
                 {' ', ' ', ' ', ' ', 'X'},
         };
-        boolean result = MatrixCheck.monoVertical(input,4);
+        boolean result = MatrixCheck.monoVertical(input, 4);
         assertThat(result).isFalse();
     }
 

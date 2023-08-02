@@ -5,34 +5,13 @@ public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
         boolean result = true;
         int tempNumber = 0;
-        for (int i = 0; i <= board.length; i++) {
-            if (board[row] == board[i]) {
-                for (int j = 0; j < board[i].length; j++) {
-                    if (board[i][j] == 'X') {
-                        result = true;
-                        ++tempNumber;
-                    } else {
-                        result = false;
-                        break;
-                    }
-                }
+        for (int i = 0; i < board.length; i++) {
+            if (board[row][i] != 'X') {
                 result = false;
                 break;
-            } else {
-                if (board.length == board[i].length) {
-                    for (int j = 0; j < board[i].length; j++) {
-                        if (board[i][j] != ' ') {
-                            result = false;
-                            break;
-                        }
-                    }
-                } else {
-                    result = false;
-                    break;
-                }
             }
         }
-        return tempNumber == board.length;
+            return result;
     }
 
     public static char[] extractDiagonal(char[][] board) {
