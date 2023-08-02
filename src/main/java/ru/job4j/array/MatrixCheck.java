@@ -44,4 +44,18 @@ public class MatrixCheck {
         return rsl;
     }
 
+    public static boolean monoVertical(char[][] board, int column) {
+        boolean result = true;
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board.length; j++) {
+                if (board[i][column] == 'X') {
+                    result = true;
+                    break;
+                } else {
+                    result = false;
+                }
+            }
+        }
+        return result;
+    }
 }
