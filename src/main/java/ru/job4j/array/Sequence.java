@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import java.lang.reflect.Array;
-
 public class Sequence {
 
     public static void main(String[] args) {
