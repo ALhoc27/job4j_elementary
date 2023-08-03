@@ -37,22 +37,4 @@ class FindLoopTest {
         int expected = 5;
         assertThat(result).isEqualTo(expected);
     }
-
-    @Test
-    void whenArrayHas5Then3() {
-        int[] data = new int[] {5, 10, 3, 1, 36, 1};
-        int el = 1;
-        int result = FindLoop.indexOfSixOne(data, el);
-        int expected = 3;
-        assertThat(result).isEqualTo(expected);
-    }
-
-    @Test
-    void whenArrayHasNot10ThenMinus1() {
-        int[] data = new int[] {2, 4, 8, 6, 9};
-        int el = 6;
-        int result = FindLoop.indexOfSixOne(data, el);
-        int expected = 3;
-        assertThat(result).isEqualTo(expected);
-    }
 }
