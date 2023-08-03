@@ -3,14 +3,12 @@ package ru.job4j.array;
 public class Check {
 
     public static boolean mono(boolean[] data) {
-        int countTempBoolean = 0;
-        for (boolean i: data) {
-            if (i) {
-                countTempBoolean++;
-            } else {
-                countTempBoolean--;
+    boolean result = true;
+        for (int i = 1; i < data.length; i++) {
+            if (data[0] != data[i]) {
+                result = false;
             }
         }
-        return Math.abs(countTempBoolean) == data.length;
+        return result;
     }
 }
