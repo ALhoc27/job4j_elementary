@@ -1,7 +1,5 @@
 package ru.job4j.calculator;
 
-import java.text.DecimalFormat;
-
 public class Calculator {
 
     public static void plus(int first, int second) {
