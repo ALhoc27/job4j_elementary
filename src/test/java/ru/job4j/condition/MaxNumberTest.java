@@ -26,4 +26,20 @@ class MaxNumberTest {
         int result = Max.numEqual(left, right);
         assertThat(left).isEqualTo(result);
     }
+
+    @Test
+    void whenMax1To2Then5() {
+        left = 5; right = 2;
+        int result = Max.max(left, right);
+        int expected = 5;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenMax1To2Then6() {
+        left = 6; right = 2;
+        int result = Max.max(left, right);
+        int expected = 5;
+        assertThat(result).isEqualTo(expected);
+    }
 }
