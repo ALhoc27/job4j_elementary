@@ -17,6 +17,15 @@ class FindLoopTest {
     }
 
     @Test
+    void whenArrayHas5Then6() {
+        int[] data = new int[] {5, 10, 3};
+        int el = 6;
+        int result = FindLoop.indexOf(data, el);
+        int expected = -1;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
     void whenArrayHasNot10ThenMinus58() {
         int[] data = new int[] {5, 10, 3, 1, 6, 36, 336, 1, 0, 9, 43};
         int el = 3;
