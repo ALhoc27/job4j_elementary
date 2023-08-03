@@ -9,27 +9,15 @@ public class ArrayDefinition {
         float[] priced = new float[40];
         String[] names = new String[4];
 
-        ArrayDefinition array = new ArrayDefinition();
-        array.numberElements(priced);
-        array.numberElements(surnames);
-        array.numberElements(ages);
+        System.out.println(ages.length);
+        System.out.println(surnames.length);
+        System.out.println(priced.length);
+        System.out.println(names.length);
 
         names[0] = "Petr Arsentev";
         names[1] = "Gav";
         names[2] = "Naf-naf";
         names[3] = "Red";
         System.out.println("names: " + Arrays.stream(names).toList());
-    }
-
-   public void numberElements(short[] index) {
-       System.out.println(index.getClass().getComponentType() + "[] " + index.length);
-    }
-
-    public void numberElements(String[] index) {
-        System.out.println(index.getClass().getComponentType() + "[] " + index.length);
-    }
-
-    public void numberElements(float[] index) {
-        System.out.println(index.getClass().getComponentType() + "[] " + index.length);
     }
 }
