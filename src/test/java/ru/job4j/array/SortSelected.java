@@ -3,17 +3,12 @@ package ru.job4j.array;
 public class SortSelected {
 
     public static int[] sort(int[] data) {
-
-        int min;
         int tempMinIndex;
-        int i = 0;
-        do {
-            min = MinDiapason.findMin(data, i, data.length - 1);
-            tempMinIndex = FindLoop.indexInRange(data, min, i, data.length - 1);
-            data = SwitchArray.swap(data, tempMinIndex, i);
-            i++;
+
+        for (int j = 0; j < data.length - 1; j++) {
+            tempMinIndex = FindLoop.indexInRange(data, MinDiapason.findMin(data, j, data.length - 1), j, data.length - 1);
+            data = SwitchArray.swap(data, tempMinIndex, j);
         }
-        while (i < data.length - 1);
         return data;
     }
 }
