@@ -3,7 +3,7 @@ package ru.job4j.array;
 public class SortSelected {
 
     public static int[] sort(int[] data) {
-        //3, 4, 1, 2, 5
+
         int min;
         int tempMinIndex;
         int i = 0;
