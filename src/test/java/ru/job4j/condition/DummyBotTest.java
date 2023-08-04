@@ -12,7 +12,6 @@ class DummyBotTest {
         String result = DummyBot.answer(in);
         String expected = "Hi, SmartAss.";
         assertThat(result).isEqualTo(expected);
-        System.out.println("whenGreetBot - " + result + " / " + expected);
     }
 
     @Test
@@ -21,7 +20,6 @@ class DummyBotTest {
         String result = DummyBot.answer(in);
         String expected = "See you later.";
         assertThat(result).isEqualTo(expected);
-        System.out.println("whenByeBot - " + result + " / " + expected);
     }
 
     @Test
@@ -30,7 +28,6 @@ class DummyBotTest {
         String result = DummyBot.answer(in);
         String expected = "I don't know. Please, ask another question.";
         assertThat(result).isEqualTo(expected);
-        System.out.println("whenUnknownBot - " + result + " / " + expected);
     }
 
 }
