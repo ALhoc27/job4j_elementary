@@ -5,17 +5,13 @@ import java.sql.SQLOutput;
 public class Factorial {
     public static int calc(int n) {
         int result = 1;
-        if (n > 1) {
-            for (int i = 1; i <= n; i++) {
-                result = result * i;
-            }
+
+        if (n == 0) {
             return result;
-        } else if (n == 0) {
-            result = 1;
-            return result;
-        } else {
-            System.out.println("Ошибка отрицаательное значение");
-            return 0;
         }
+        for (int i = 2; i <= n; i++) {
+            result = result * i;
+        }
+        return result;
     }
 }
