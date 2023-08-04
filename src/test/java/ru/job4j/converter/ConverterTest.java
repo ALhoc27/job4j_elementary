@@ -13,7 +13,6 @@ class ConverterTest {
         float out = Converter.rubleToEuro(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
-        System.out.println("whenConvert140RblThen2Euro " + expected + " / " + out);
     }
 
     @Test
@@ -23,7 +22,6 @@ class ConverterTest {
         float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
-        System.out.println("whenConvert180RblThen3Dlr " + expected + " / " + out);
     }
 
     @Test
@@ -33,7 +31,6 @@ class ConverterTest {
         float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
-        System.out.println("whenConvert200RblThen3dot3333Dlr " + expected + " / " + out);
     }
 
     @Test
@@ -43,7 +40,6 @@ class ConverterTest {
         float out = Converter.eurotoRuble(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
-        System.out.println("whenConvert140EuroThen9800rub " + expected + " / " + out);
     }
 
     @Test
@@ -53,6 +49,5 @@ class ConverterTest {
         float out = Converter.dollartoRuble(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
-        System.out.println("whenConvert140DlrThen9800rub " + expected + " / " + out);
     }
 }
