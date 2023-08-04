@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class X2Test {
 
     @Test
-    void whenA10B0C0X2Then40() {
+    void whenA10B0C0X2DotThen40() {
         int a = 10;
         int b = 0;
         int c = 0;
@@ -17,11 +17,10 @@ class X2Test {
         int expected = 40;
         int rsl = X2.calc(a, b, c, x);
         assertThat(rsl).isEqualTo(expected);
-        System.out.println(expected + " / " + rsl);
     }
 
     @Test
-    void whenA10B0C0X2Then401() {
+    void whenA1B1C1X1DotThen3() {
         int a = 1;
         int b = 1;
         int c = 1;
@@ -30,11 +29,10 @@ class X2Test {
         int expected = 3;
         int rsl = X2.calc(a, b, c, x);
         assertThat(rsl).isEqualTo(expected);
-        System.out.println(expected + " / " + rsl);
     }
 
     @Test
-    void whenA10B0C0X2Then402() {
+    void whenA0B1C1X1DotThen2() {
         int a = 0;
         int b = 1;
         int c = 1;
@@ -43,11 +41,10 @@ class X2Test {
         int expected = 2;
         int rsl = X2.calc(a, b, c, x);
         assertThat(rsl).isEqualTo(expected);
-        System.out.println(expected + " / " + rsl);
     }
 
     @Test
-    void whenA10B0C0X2Then403() {
+    void whenA1B1C0X1DotThen2() {
         int a = 1;
         int b = 1;
         int c = 0;
@@ -60,7 +57,7 @@ class X2Test {
     }
 
     @Test
-    void whenA10B0C0X2Then404() {
+    void whenA1B1C1X0DotThen1() {
         int a = 1;
         int b = 1;
         int c = 1;
