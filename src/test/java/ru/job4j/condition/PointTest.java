@@ -17,7 +17,6 @@ class PointTest {
         int y2 = 0;
         double out = Point.distance(x1, y1, x2, y2);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
-        System.out.println("whenDistanceY1Y2X1X2dot2Then141 " + expected + " / " + out);
     }
 
     @Test
@@ -29,7 +28,6 @@ class PointTest {
         int y2 = 6;
         double out = Point.distance(x1, y1, x2, y2);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
-        System.out.println("whenDistanceY1Y2X1X2dot2Then632 " + expected + " / " + out);
     }
 
     @Test
@@ -41,7 +39,6 @@ class PointTest {
         int y2 = 0;
         double out = Point.distance(x1, y1, x2, y2);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
-        System.out.println("whenDistanceY1Y2X1X2dot2Then2 " + expected + " / " + out);
     }
 
 }
