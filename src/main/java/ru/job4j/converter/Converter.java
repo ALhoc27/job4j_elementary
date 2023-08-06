@@ -3,26 +3,26 @@ package ru.job4j.converter;
 import java.text.DecimalFormat;
 
 public class Converter {
-    private static final float Course_Of_Dolar_Rub = 60f;
-    private static final float Course_Of_Euro_Ru = 70f;
+    private static final float COURSE_OF_DOLAR_RUB = 60f;
+    private static final float COURSE_OF_EURO_RU = 70f;
 
     public static float eurotoRuble(float value) {
-        float rsl = Course_Of_Euro_Ru * value;
+        float rsl = COURSE_OF_EURO_RU * value;
         return rsl;
     }
 
     public static float dollartoRuble(float value) {
-        float rsl = Course_Of_Dolar_Rub * value;
+        float rsl = COURSE_OF_DOLAR_RUB * value;
         return rsl;
     }
 
     public static float rubleToEuro(float value) {
-        float rsl = value / Course_Of_Euro_Ru;
+        float rsl = value / COURSE_OF_EURO_RU;
         return rsl;
     }
 
     public  static float rubleToDollar(float value) {
-        float rsl = value / Course_Of_Dolar_Rub;
+        float rsl = value / COURSE_OF_DOLAR_RUB;
         return rsl;
     }
 
@@ -43,8 +43,8 @@ public class Converter {
         float outRD = Converter.rubleToDollar(in);
         boolean passedsfe = expectedeurotoRD == outRD;
 
-        System.out.println("Курс долара: " + Course_Of_Dolar_Rub + " rub");
-        System.out.println("Курс евро: " + Course_Of_Euro_Ru + " rub");
+        System.out.println("Курс долара: " + COURSE_OF_DOLAR_RUB + " rub");
+        System.out.println("Курс евро: " + COURSE_OF_EURO_RU + " rub");
         System.out.println("");
 
         float eurotoR = eurotoRuble(value);
