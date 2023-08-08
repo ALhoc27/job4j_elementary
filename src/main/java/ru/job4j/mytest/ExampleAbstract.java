@@ -19,7 +19,6 @@ class Mainstart extends ExampleAbstract {
 class MainM {
     public static void main(String[] args) {
         Mainstart obM = new Mainstart();
-
         obM.msgTerminal();
     }
 }
