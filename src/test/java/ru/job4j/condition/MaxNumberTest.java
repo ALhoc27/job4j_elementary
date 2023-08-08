@@ -39,7 +39,7 @@ class MaxNumberTest {
     void whenMax1To2Then6() {
         left = 6; right = 2;
         int result = Max.max(left, right);
-        int expected = 5;
+        int expected = 6;
         assertThat(result).isEqualTo(expected);
     }
 }
