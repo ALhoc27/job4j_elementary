@@ -28,7 +28,7 @@ public class MatrixCheck {
                 if (board[j][column] == 'X') {
                     result = true;
                     ++tempresult;
-                    break;
+                    continue;
                 }
             }
             return tempresult == board.length;
