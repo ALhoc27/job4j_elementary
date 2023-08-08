@@ -7,9 +7,9 @@ public class T {
 }
 
 class O extends T {
-        void start() {
+    void start() {
         System.out.println(" - Переопределенный метод класса наследника 'O'");
-     }
+    }
 }
 
 class MainExample {
