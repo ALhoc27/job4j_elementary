@@ -21,7 +21,7 @@ class Ey extends Ex {
 
 class MainResult {
     public static void main(String[] args) {
-        Ey ey = new Ey(12, 23, 45); // Создали обькт унаследовов часть полей от супер класса
-        // с помощью конструкции super()
+        Ey ey = new Ey(12, 23, 45); /*Создали обькт унаследовов часть полей от супер класса*/
+        /* с помощью конструкции super()*/
     }
 }

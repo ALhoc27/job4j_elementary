@@ -32,11 +32,11 @@ class Dispath {
         aq = c; /* переменная типа супер класс ссылается на обьект класса наследника Cq переопределяя методы */
         aq.callme(); /* вызовется переопределенный метод подкласса c callme() -> Класс C */
 
-        /* for (int i = 2; i <= 3; i++) {
-            aq = switch (i) { */
-                /* case 2 -> b; /* aq = b */
-                /* case 3 -> c; /* aq = c */
-                /* default -> null;
+/*         for (int i = 2; i <= 3; i++) {
+            aq = switch (i) {
+                 case 2 -> b;  aq = b
+                 case 3 -> c;  aq = c
+                 default -> null;
             };
             aq.callme(); */
 

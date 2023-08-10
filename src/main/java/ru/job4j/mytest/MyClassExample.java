@@ -8,12 +8,12 @@ class FirstDerivedClass extends MyClassExample {
 }
 
 class TypeMyExample {
-    // Несмотря на то что getObj () возвращает различные типы
-    // объектов в иерархии наследования MyClassExample,
-    // объявленным типом возвращаемого значения является MyClassExample.
-    // В результате во всех трех показанных здесь случаях предполагается,
-    // что типом переменных является MyClassExample,
-    // хотя получаются разные производные типы объектов.
+/*     Несмотря на то что getObj () возвращает различные типы
+     объектов в иерархии наследования MyClassExample,
+     объявленным типом возвращаемого значения является MyClassExample.
+     В результате во всех трех показанных здесь случаях предполагается,
+     что типом переменных является MyClassExample,
+     хотя получаются разные производные типы объектов.*/
     public static void main(String[] args) {
         MyClassExample j; /* типом переменнjq j является MyClassExample */
         MyClassExample getObjExample = new MyClassExample(); /* обьект типа MyClassExample */
@@ -22,7 +22,7 @@ class TypeMyExample {
         j = getObjFirstDerived;
         getObjExample = getObjFirstDerived;
 
-//        j.x = 10;
-//        getObjExample.x = 10;
+/*        j.x = 10;
+        getObjExample.x = 10;*/
     }
 }
