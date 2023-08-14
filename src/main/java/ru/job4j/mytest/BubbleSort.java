@@ -24,7 +24,6 @@ public class BubbleSort {
             }
         }
     }
-
     public static void bubbleSort2(int[] sortArr) {
         for (int i = 0; i < sortArr.length - 1; i++) {
             System.out.print("\n i= " + i + "  j= ");
