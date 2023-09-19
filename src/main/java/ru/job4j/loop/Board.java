@@ -7,7 +7,7 @@ public class Board {
                 if ((i + j) % 2 != 0) {
                     System.out.print("X");
                 } else if ((i + j) % 2 == 0) {
-                    System.out.print("X");
+                    System.out.print(" ");
                 } else {
                     System.out.print(" ");
                 }
