@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PointTest {
 
     @Test
-    void whenDistanceY1Y2X1X2dot2Then141() {
+    void whenDistanceY1Y2X1X2dot2Then1F41() {
         double expected = 1.41;
         int x1 = 1;
         int y1 = 1;
@@ -20,7 +20,7 @@ class PointTest {
     }
 
     @Test
-    void whenDistanceY1Y2X1X2dot2Then632() {
+    void whenDistanceY1Y2X1X2dot2Then6F32() {
         double expected = 6.32;
         int x1 = 0;
         int y1 = 0;
