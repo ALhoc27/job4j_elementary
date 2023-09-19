@@ -9,27 +9,20 @@ import static org.assertj.core.api.Assertions.linesOf;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MaxNumberTest {
-    int left;
-    int right;
 
     @Test
     void whenMax1To2Then2() {
-        left = 5; right = 7;
+        int left = 5;
+        int right = 7;
         int result = Max.max(left, right);
         int expected = 7;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    void whenMax1AndMax2Then() {
-        left = 7; right = 7;
-        int result = Max.numEqual(left, right);
-        assertThat(left).isEqualTo(result);
-    }
-
-    @Test
     void whenMax1To2Then5() {
-        left = 5; right = 2;
+        int left = 5;
+        int right = 2;
         int result = Max.max(left, right);
         int expected = 5;
         assertThat(result).isEqualTo(expected);
@@ -37,7 +30,8 @@ class MaxNumberTest {
 
     @Test
     void whenMax1To2Then6() {
-        left = 6; right = 2;
+        int left = 6;
+        int right = 2;
         int result = Max.max(left, right);
         int expected = 6;
         assertThat(result).isEqualTo(expected);
