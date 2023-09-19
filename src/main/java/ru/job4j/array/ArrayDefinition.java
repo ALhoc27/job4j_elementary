@@ -19,5 +19,6 @@ public class ArrayDefinition {
         names[2] = "Naf-naf";
         names[3] = "Red";
         System.out.println("names: " + Arrays.stream(names).toList());
+
     }
 }
