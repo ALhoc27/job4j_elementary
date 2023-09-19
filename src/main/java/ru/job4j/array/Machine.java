@@ -5,15 +5,15 @@ import java.util.Arrays;
 public class Machine {
     public static int[] change(int money, int price) {
         int[] coins = {10, 5, 2, 1};
-        int tempChange = money - price;
-        int tempSize = 0;
+        int size = 0;
         int[] tempresul = new int[100];
-        for (int i : coins) {
-            while (tempChange >= i) {
-                tempresul[tempSize++] = i;
-                tempChange -= i;
+        int tempChange = money - price;
+        for (int coin : coins) {
+            while (tempChange >= coin) {
+                tempresul[size++] = coin;
+                tempChange -= coin;
             }
         }
-        return Arrays.copyOf(tempresul, tempSize);
+        return Arrays.copyOf(tempresul, size);
     }
 }
