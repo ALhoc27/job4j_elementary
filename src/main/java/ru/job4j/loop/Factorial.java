@@ -1,7 +1,5 @@
 package ru.job4j.loop;
 
-import java.sql.SQLOutput;
-
 public class Factorial {
     public static int calc(int n) {
         int result = 1;
