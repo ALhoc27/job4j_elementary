@@ -17,7 +17,7 @@ class SqAreaTest {
     }
 
     @Test
-    void whenP9K3exp3dot79() {
+    void whenP9K3exp3Dot79() {
         float expected = 3.79f;
         int p = 9;
         double k = 3;
@@ -26,7 +26,7 @@ class SqAreaTest {
     }
 
     @Test
-    void whenP8K4exp2dot56() {
+    void whenP8K4exp2Dot56() {
         float expected = 2.56f;
         int p = 8;
         double k = 4;

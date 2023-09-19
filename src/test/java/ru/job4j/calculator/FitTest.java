@@ -6,20 +6,20 @@ import static org.assertj.core.api.Assertions.*;
 class FitTest {
 
     @Test
-    void wheneHeight187ManWeightThenDot100f05() {
-        short inHeight = 187;
+    void wheneHeight187ManWeightThen100Dot05() {
+        short in = 187;
         double eps = 0.01f;
         double expected = 100.05f;
-        double outMen = Fit.manWeight(inHeight);
-        assertThat(outMen).isEqualTo(expected, withPrecision(eps));
+        double out = Fit.manWeight(in);
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
     @Test
-    void wheneHeight187WoomenWeightThenDot88f55() {
-        short inHeight = 187;
+    void wheneHeight187WoomenWeightThen88Dot55f() {
+        short in = 187;
         double eps = 0.01f;
         double expected = 88.55f;
-        double outWomen = Fit.womanWeight(inHeight);
-        assertThat(outWomen).isEqualTo(expected, withPrecision(eps));
+        double out = Fit.womanWeight(in);
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 }
