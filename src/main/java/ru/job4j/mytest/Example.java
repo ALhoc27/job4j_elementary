@@ -22,7 +22,6 @@ class B extends Example {
     }
 
     void show(String msg) {
-        //super.show();
         System.out.println("k: " + k);
         System.out.println(msg);
     }
