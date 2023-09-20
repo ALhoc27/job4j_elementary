@@ -2,6 +2,8 @@ package ru.job4j.array;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -33,5 +35,7 @@ class CheckTest {
         boolean[] data = new boolean[] {false, true, false};
         boolean result = Check.mono(data);
         assertThat(result).isFalse();
+        assertThat(Arrays.equals(result, expected)).isTrue();
     }
+
 }
