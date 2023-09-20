@@ -35,7 +35,6 @@ class CheckTest {
         boolean[] data = new boolean[] {false, true, false};
         boolean result = Check.mono(data);
         assertThat(result).isFalse();
-        assertThat(Arrays.equals(result, expected)).isTrue();
     }
 
 }
