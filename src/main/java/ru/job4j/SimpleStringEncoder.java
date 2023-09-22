@@ -1,20 +1,24 @@
 package ru.job4j;
 
 public class SimpleStringEncoder {
+    static int counter = 0;
 
     public static String encode(String input) {
-        StringBuilder result = new StringBuilder();
+        String result = "";
         char symbol = input.charAt(0);
-        int counter = 1;
-        for (int i = 1; i < input.length(); i++) {
+        for (int i = 0; i <= input.length() - 1; i++) {
             if (symbol == input.charAt(i)) {
+                result = (symbol == input.charAt(i)) ? "counter++" : result + symbol;
                 counter++;
+                System.out.print(" (до иф)counter = " + counter);
             } else {
-                result = new StringBuilder((counter == 1 ? result.toString() + symbol : result.toString() + symbol + counter));
-                symbol = input.charAt(i);
+                result = (counter > 1) ? result + symbol + counter : result + symbol;
+                System.out.println(" (после иф)counter = " + counter + " ");
+                System.out.print(" result = " + result + " ");
                 counter = 1;
+                symbol = input.charAt(i);
             }
         }
-        return (counter == 1 ? result.toString() + symbol : result.toString() + symbol + counter);
+        return result;
     }
 }
