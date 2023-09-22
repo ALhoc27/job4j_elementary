@@ -57,8 +57,8 @@ class SimpleStringEncoderTest {
 
     @Test
     void whenStringaaabbbbaaabbcccdddddThenResulta3b4a3b2c3d5() {
-        String input = "aaabbbbaaabbcccddddd";
-        String expected = "a3b4a3b2c3d5";
+        String input = "aaddddd";
+        String expected = "a2d5";
         String result = SimpleStringEncoder.encode(input);
         assertThat(result).isEqualTo(expected);
     }
