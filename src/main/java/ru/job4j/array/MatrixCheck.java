@@ -23,16 +23,14 @@ public class MatrixCheck {
 
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
-        int tempresult = 0;
-            for (int j = 0; j < board.length; j++) {
-                if (board[j][column] == 'X') {
-                    result = true;
-                    ++tempresult;
-                    continue;
-                }
+        for (int j = 0; j < board.length; j++) {
+            if (board[j][column] != 'X') {
+                result = false;
+                break;
             }
-            return tempresult == board.length;
         }
+        return result;
+    }
 
     public static boolean isWin(char[][] board) {
         boolean result = false;
