@@ -9,7 +9,7 @@ public class SkipNegative {
                     array[i][j] = 0;
                 }
             }
-            }
-        return array;
         }
+        return array;
+    }
 }
