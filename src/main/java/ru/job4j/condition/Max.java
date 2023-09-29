@@ -14,7 +14,8 @@ public class Max {
     }
 
     public static int max(int left, int right, int thirdNumber, int fourthNumber) {
-        return max(max(max(left, right), thirdNumber), fourthNumber);
+        return max(max(left, right), max(thirdNumber, fourthNumber));
+        /*return max(max(max(left, right), thirdNumber), fourthNumber);*/
         /*return (max(left, right, thirdNumber) > fourthNumber) ? max(left, right, thirdNumber) : fourthNumber;*/
     }
 
