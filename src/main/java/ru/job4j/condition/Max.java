@@ -9,11 +9,13 @@ public class Max {
         }
 
     public static int max(int left, int right, int thirdNumber) {
-        return (left > right && left > thirdNumber) ? left : (right > thirdNumber) ? right : thirdNumber;
+        return max(max(left, right), thirdNumber);
+        /*return (left > right && left > thirdNumber) ? left : (right > thirdNumber) ? right : thirdNumber;*/
     }
 
     public static int max(int left, int right, int thirdNumber, int fourthNumber) {
-        return (max(left, right, thirdNumber) > fourthNumber) ? max(left, right, thirdNumber) : fourthNumber;
+        return max(max(max(left, right), thirdNumber), fourthNumber);
+        /*return (max(left, right, thirdNumber) > fourthNumber) ? max(left, right, thirdNumber) : fourthNumber;*/
     }
 
     public static void main(String[] args) {
