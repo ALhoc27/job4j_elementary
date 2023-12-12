@@ -22,4 +22,12 @@ class ArrayCharTest {
         boolean result = ArrayChar.startsWith(word, pref);
         assertThat(result).isFalse();
     }
+
+    @Test
+    public void example() {
+        char[] word = {'H', 'e', 'l', 'l', 'o'};
+        char[] pref = {'H', 'i'};
+        boolean result = ArrayChar.startsWith(word, pref);
+        assertFalse(result);
+    }
 }
