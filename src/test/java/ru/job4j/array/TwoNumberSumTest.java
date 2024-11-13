@@ -47,10 +47,6 @@ class TwoNumberSumTest {
     void testSameObject() {
         String str1 = "hello";
         String str2 = str1;
-        // str2 теперь ссылается на тот же объект, что и str1
-
-        // Используем assertSame для проверки,
-        // что обе переменные указывают на один и тот же объект
         assertSame(str1, str2);
     }
 }
